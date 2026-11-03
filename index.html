@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Pages 示例 · 文字/图片/视频/音频</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Microsoft YaHei","PingFang SC",sans-serif; background:#f5f6f8; color:#333; line-height:1.7; }
+  .wrap { max-width:820px; margin:0 auto; padding:30px 20px 60px; }
+  header { text-align:center; padding:30px 0 20px; }
+  header h1 { font-size:30px; color:#222; }
+  header p { color:#888; margin-top:8px; font-size:14px; }
+  .card { background:#fff; border-radius:12px; padding:24px; margin-top:24px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+  .card h2 { font-size:20px; color:#0366d6; margin-bottom:14px; padding-bottom:10px; border-bottom:2px solid #f0f0f0; }
+  .card p { margin-bottom:10px; }
+  .card img { width:100%; border-radius:8px; display:block; }
+  .video-box { position:relative; width:100%; aspect-ratio:16/9; background:#000; border-radius:8px; overflow:hidden; }
+  .video-box iframe { width:100%; height:100%; border:0; }
+  audio { width:100%; margin-top:10px; }
+  .tag { display:inline-block; background:#0366d6; color:#fff; font-size:12px; padding:2px 10px; border-radius:20px; margin-bottom:10px; }
+  .foot { text-align:center; color:#aaa; font-size:13px; margin-top:40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GitHub Pages 示例网页</h1>
+    <p>一个页面同时展示：文字 · 图片 · 视频 · 音频</p>
+  </header>
+
+  <!-- 1. 文字 -->
+  <section class="card">
+    <span class="tag">文字</span>
+    <h2>这是一段文字内容</h2>
+    <p>GitHub Pages 可以完整承载网页上的文字内容。这里可以放你的介绍、故事、说明文档、日志等等，样式都能自由排版。</p>
+    <p>只要把 HTML 文件放到 GitHub 仓库并开启 Pages，访客通过浏览器就能打开看到这些文字。</p>
+  </section>
+
+  <!-- 2. 图片 -->
+  <section class="card">
+    <span class="tag">图片</span>
+    <h2>这是一张图片</h2>
+    <p>图片推荐用图床外链（不占 GitHub 容量），也可以直接放进仓库文件夹。</p>
+    <img src="https://picsum.photos/seed/doubao/900/520" alt="示例图片">
+  </section>
+
+  <!-- 3. 视频 -->
+  <section class="card">
+    <span class="tag">视频</span>
+    <h2>这是一段内嵌视频（B站）</h2>
+    <p>视频不打包进 GitHub，用 B站 iframe 嵌入，节省空间、加载也快。</p>
+    <div class="video-box">
+      <iframe src="//player.bilibili.com/player.html?bvid=BV1GJ411x7h7&page=1&high_quality=1&danmaku=0" scrolling="no" frameborder="no" allowfullscreen="true"></iframe>
+    </div>
+  </section>
+
+  <!-- 4. 音频 -->
+  <section class="card">
+    <span class="tag">音频</span>
+    <h2>这是一段音频</h2>
+    <p>音频用外部 mp3 链接播放，访客可直接点播放。</p>
+    <audio controls preload="none">
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      你的浏览器不支持音频播放。
+    </audio>
+  </section>
+
+  <div class="foot">GitHub Pages · 静态网站示例 · 文字 / 图片 / 视频 / 音频</div>
+</div>
+</body>
+</html>
